@@ -1,7 +1,7 @@
 Crowdfunder::Application.routes.draw do
   
 #  get "projects/index"
-resources :projects, :only => [:index]
+resources :projects, :only => [:index, :show]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -16,7 +16,7 @@ resources :projects, :only => [:index]
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
+ 
   # Sample resource route with options:
   #   resources :products do
   #     member do
