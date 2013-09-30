@@ -1,4 +1,8 @@
 Crowdfunder::Application.routes.draw do
+  
+#  get "projects/index"
+resources :projects, :only => [:index]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
