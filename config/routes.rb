@@ -1,4 +1,8 @@
 Crowdfunder::Application.routes.draw do
+  get "welcome_controller/index"
+
+  get "welcome_controller/create"
+
 root :to => 'projects#index'
 #  get "projects/index"
 resources :projects, :only => [:index, :show]
