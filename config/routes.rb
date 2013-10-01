@@ -1,7 +1,8 @@
 Crowdfunder::Application.routes.draw do
-  get "welcome_controller/index"
+  
+  get "welcome/index"
 
-  get "welcome_controller/create"
+  get "welcome/create"
 
 root :to => 'projects#index'
 #  get "projects/index"
