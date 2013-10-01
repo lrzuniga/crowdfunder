@@ -1,5 +1,5 @@
 Crowdfunder::Application.routes.draw do
-  
+root :to => 'projects#index'
 #  get "projects/index"
 resources :projects, :only => [:index, :show]
 
