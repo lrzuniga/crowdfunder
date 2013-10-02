@@ -2,6 +2,7 @@
   <div class="navbar-inner">
     <div class="container">
       <a class="brand" href="#">CrowdFunder</a>
+
       <div class="nav-collapse collapse">
         <ul class="nav">
           <li class="<%= 'active' if current_page? root_path %>">
@@ -10,6 +11,15 @@
           <li class="<%= 'active' if controller.controller_name == "projects"%>">
             <%= link_to 'Projects', :projects %>
           </li>
+          
+  <div class="pull-right">
+    <% if logged_in? %>
+      <%= link_to 'Logout', '#', class: 'btn' %>
+    <% else %>
+      <%= link_to 'Sign Up', [:new, :user], class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+
         </ul>
       </div>
     </div>
